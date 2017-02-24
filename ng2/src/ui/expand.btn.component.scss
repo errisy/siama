@@ -1,0 +1,31 @@
+﻿:host{
+    cursor: pointer;
+    >svg{
+        &.expanded{
+            >path#expanded{
+                stroke-opacity: 1;
+            }
+            >path#shrinked{
+                stroke-opacity: 0;
+            }
+        }
+        &.shrinked{
+            >path#expanded{
+                stroke-opacity: 0;
+            }
+            >path#shrinked{
+                stroke-opacity: 1;
+            }
+        }
+        &:hover{
+            >path{
+                stroke: #08f;
+            }
+        }
+        &:active{
+            >path{
+                stroke: #00b;
+            }
+        }
+    }
+}

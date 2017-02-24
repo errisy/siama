@@ -1,0 +1,138 @@
+﻿:host {
+  display: flex;
+  flex: 1 1 auto;
+  padding: 15px;
+  flex-direction: column;
+  align-items: stretch; }
+  :host > form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; }
+    :host > form > fieldset > div.operations {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin: 10px 0 10px 0; }
+      :host > form > fieldset > div.operations > div.edit {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        padding: 4px;
+        border-radius: 4px; }
+        :host > form > fieldset > div.operations > div.edit:hover {
+          background-color: #fc8; }
+        :host > form > fieldset > div.operations > div.edit:active {
+          background-color: #fa3; }
+        :host > form > fieldset > div.operations > div.edit > span {
+          margin: 0 5px 0 5px; }
+        :host > form > fieldset > div.operations > div.edit > div.btn-edit {
+          flex: 0 0 24px;
+          width: 24px;
+          height: 24px;
+          background-image: url("http://rawgit.com/errisy/siama-static/master/svg/edit.svg");
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain; }
+    :host > form > fieldset > div.fields {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: relative;
+      justify-content: space-around; }
+      :host > form > fieldset > div.fields > div.field {
+        display: flex;
+        margin: 10px 0 10px 0;
+        align-items: center; }
+        @media screen and (max-width: 450px) {
+          :host > form > fieldset > div.fields > div.field {
+            flex: 0 0 100%;
+            flex-direction: column; } }
+        @media screen and (min-width: 450px) and (max-width: 750px) {
+          :host > form > fieldset > div.fields > div.field {
+            flex: 0 0 100%;
+            flex-direction: row; } }
+        @media screen and (min-width: 750px) and (max-width: 1100px) {
+          :host > form > fieldset > div.fields > div.field {
+            flex: 0 0 50%;
+            flex-direction: row; } }
+        @media screen and (min-width: 1100px) {
+          :host > form > fieldset > div.fields > div.field {
+            flex: 0 0 33%;
+            flex-direction: row; } }
+        :host > form > fieldset > div.fields > div.field > label {
+          margin-right: 8px; }
+        :host > form > fieldset > div.fields > div.field > div.ui-checkbox-slide {
+          flex: 0 0 40px;
+          width: 40px; }
+        :host > form > fieldset > div.fields > div.field > div.ui-checkbox-tick {
+          flex: 0 0 20px;
+          width: 20px; }
+    :host > form > fieldset > div.uploader {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: stretch;
+      flex-direction: column;
+      margin: 20px 0 10px 0; }
+      :host > form > fieldset > div.uploader > div.title {
+        flex: 0 0 auto;
+        font-size: 28px;
+        margin: 5px 0 5px 0; }
+      :host > form > fieldset > div.uploader > div.input {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: row; }
+    :host > form > fieldset > div.image {
+      flex: 0 0 120px;
+      width: 300px;
+      height: 120px;
+      border: 1px solid #ccc;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    :host > form > fieldset > div.error {
+      flex: 0 0 32px;
+      height: 32px;
+      color: red; }
+    :host > form > fieldset > div.buttons {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; }
+      :host > form > fieldset > div.buttons > div.btn {
+        padding: 4px 12px 4px 12px;
+        box-shadow: rgba(48, 48, 48, 0.4) 2px 2px 4px;
+        border: 1px solid black;
+        cursor: pointer;
+        user-select: none;
+        margin: 0px 5px 0px 5px; }
+        :host > form > fieldset > div.buttons > div.btn:hover {
+          background-color: #fc8; }
+        :host > form > fieldset > div.buttons > div.btn:active {
+          background-color: #fa3; }
+        :host > form > fieldset > div.buttons > div.btn:last-child {
+          margin-left: 25px; }
+        :host > form > fieldset > div.buttons > div.btn:active {
+          box-shadow: rgba(48, 48, 48, 0.4) 1px 1px 2px; }
+
+@media screen and (max-width: 750px) {
+  .narrow > :host > form > fieldset > div.fields > div.field {
+    flex: 0 0 100%;
+    flex-direction: column; } }
+
+@media screen and (min-width: 750px) and (max-width: 960px) {
+  .narrow > :host > form > fieldset > div.fields > div.field {
+    flex: 0 0 100%;
+    flex-direction: row; } }
+
+@media screen and (min-width: 960px) and (max-width: 1440px) {
+  .narrow > :host > form > fieldset > div.fields > div.field {
+    flex: 0 0 50%;
+    flex-direction: row; } }
+
+@media screen and (min-width: 1440px) {
+  .narrow > :host > form > fieldset > div.fields > div.field {
+    flex: 0 0 33%;
+    flex-direction: row; } }
+

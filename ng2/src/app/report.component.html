@@ -1,0 +1,67 @@
+﻿<form>
+    <fieldset>
+        <legend>Inspection Report</legend>
+
+        <div class="operations">
+            <div class="edit" (click)="readonly=!readonly">
+                <span>Edit</span>
+                <div class="btn-edit"></div>
+            </div>
+        </div>
+        <div class="fields">
+            <div class="field">
+                <label for="InspectionNumber">Inspection No:</label>
+                <input name="InspectionNumber" type="text" required [(ngModel)]="report.InspectionNumber" pattern="/^\w+$/ig" [readonly]="readonly" />
+            </div>
+
+            <div class="field">
+                <label for="InspectionDate">Inspection Date:</label>
+                <input name="InspectionDate" [(ngModel)]="report.InspectionDate" [readonly]="readonly" required pattern="/^\d{2}\/\d{2}\/\d+$/ig" type="text" />
+                <div [(ui-datepicker)]="report.InspectionDate" [readonly]="readonly" ></div>
+            </div>
+
+            <div class="field">
+                <label for="StructureNumber">Structure No:</label>
+                <input name="StructureNumber" [(ngModel)]="report.StructureNumber" required type="number" [readonly]="readonly" />
+            </div>
+
+            <div class="field">
+                <label for="DeckType">Deck Type:</label>
+                <select name="DeckType" [(ngModel)]="report.DeckType" [disabled]="readonly" >
+                    <option value="Concrete">Concrete</option>
+                    <option value="Steel">Steel</option>
+                    <option value="Sealed">Sealed</option>
+                    <option value="Wood">Wood</option>
+                    <option value="Earth">Earth</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="MaintenanceRequest">Maintenance Req:</label>
+                <div [(ui-checkbox-slide)]="report.MaintenanceRequest" [readonly]="readonly" ></div>
+            </div>
+
+            <div class="field">
+                <label for="HighwayBridge">Highway Bridge:</label>
+                <div [(ui-checkbox-tick)]="report.HighwayBridge" [readonly]="readonly" ></div>
+            </div>
+        </div>
+        <div class="uploader">
+            <div class="title">Upload an image.</div>
+            <div class="input">
+                <input name="BridgeImage" type="file" accept="image/*" (change)="onImageChange($event)" [disabled]="readonly" />
+                <label for="BridgeImage">(max 2MB)</label>
+            </div>
+        </div>
+        <div class="image" [style.background-image]="report.Image?('url('+report.Image+')'):''">
+
+        </div>
+        <div class="error">{{error}}</div>
+        <div class="buttons">
+            <div class="btn" (click)="Clear()">Clear</div>
+            <div class="btn" (click)="Delete()">Delete</div>
+            <div class="btn" (click)="Submit()">Submit</div>
+        </div>
+    </fieldset>
+
+</form>

@@ -1,0 +1,14 @@
+﻿:host{
+    >svg{
+        &:hover{
+            >path{
+                stroke: #08f;
+            }
+        }
+        &:active{
+            >path{
+                stroke: #00b;
+            }
+        }
+    }
+}

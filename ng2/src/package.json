@@ -1,0 +1,33 @@
+{
+  "name": "siama-bridges-test",
+  "version": "1.0.0",
+  "description": "ricketty bridges test",
+  "keywords": [],
+  "author": "Zhenyu Shi",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "6.23.0",
+    "core-js": "^2.4.0",
+    "reflect-metadata": "^0.1.3",
+    "errisy-task": "1.0.1",
+    "errisy-util": "1.0.0",
+    "errisy-string": "1.0.0",
+    "errisy-packer": "1.0.0",
+    "systemjs": "0.19.27",
+    "zone.js": "^0.6.12",
+    "errisy-rpc": "1.0.1",
+     "rxjs": "5.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-babili": "0.0.11",
+    "babel-preset-es2015": "6.22.0",
+    "babel-core": "6.23.1",
+    "html-minifier": "3.3.3",
+    "clean-css": "4.0.8",
+    "systemjs-builder": "0.16.3",
+    "errisy-tsc": "1.0.2",
+    "errisy-server": "1.0.3",
+    "errisy-fs": "1.0.0"
+  },
+  "repository": {}
+}

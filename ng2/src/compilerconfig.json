@@ -1,0 +1,62 @@
+﻿[
+  {
+    "outputFile": "styles.css",
+    "inputFile": "styles.scss"
+  },
+  {
+    "outputFile": "app.css",
+    "inputFile": "app.scss"
+  },
+  {
+    "outputFile": "data/styles.data.css",
+    "inputFile": "data/styles.data.scss"
+  },
+  {
+    "outputFile": "app/gallary.component.css",
+    "inputFile": "app/gallary.component.scss"
+  },
+  {
+    "outputFile": "app/app.component.css",
+    "inputFile": "app/app.component.scss"
+  },
+  {
+    "outputFile": "app/content.component.css",
+    "inputFile": "app/content.component.scss"
+  },
+  {
+    "outputFile": "ui/expand.btn.component.css",
+    "inputFile": "ui/expand.btn.component.scss"
+  },
+  {
+    "outputFile": "app/pagenotfound.component.css",
+    "inputFile": "app/pagenotfound.component.scss"
+  },
+  {
+    "outputFile": "app/report.component.css",
+    "inputFile": "app/report.component.scss"
+  },
+  {
+    "outputFile": "ui/datepicker.css",
+    "inputFile": "ui/datepicker.scss"
+  },
+  {
+    "outputFile": "ui/my-date-picker.component.css",
+    "inputFile": "ui/my-date-picker.component.scss"
+  },
+  {
+    "outputFile": "ui/datepicker.component.css",
+    "inputFile": "ui/datepicker.component.scss"
+  },
+  {
+    "outputFile": "ui/line.btn.component.css",
+    "inputFile": "ui/line.btn.component.scss"
+  },
+  {
+    "outputFile": "ui/slide.checkbox.component.css",
+    "inputFile": "ui/slide.checkbox.component.scss"
+  },
+  {
+    "outputFile": "ui/tick.checkbox.component.css",
+    "inputFile": "ui/tick.checkbox.component.scss"
+  }
+]

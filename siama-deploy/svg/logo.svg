@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     class="svg-logo" viewBox="0 0 720 240">
+    <path fill="#444"
+            d="M 40 120
+        a 400 280 0 0 1 640 0
+        Z" />
+    <text x="360" y="120" font-family="Arial" fill="#eee" stroke="#666" stroke-width="1" font-size="100" text-anchor="middle" alignment-baseline="auto">
+        Ricketty
+    </text>
+    <path fill-opacity="0" 
+          stroke="#eee"
+          stroke-linecap="round"
+          stroke-width="12"
+          d="M 60 160
+          a 80 40 0 0 1 120 0
+          a 80 40 0 0 0 120 0
+          a 80 40 0 0 1 120 0
+          a 80 40 0 0 0 120 0
+          a 80 40 0 0 1 120 0
+          "/>
+    <path fill-opacity="0"
+          stroke="#eee"
+          stroke-linecap="round"
+          stroke-width="12"
+          d="M 60 190
+          a 80 40 0 0 1 120 0
+          a 80 40 0 0 0 120 0
+          a 80 40 0 0 1 120 0
+          a 80 40 0 0 0 120 0
+          a 80 40 0 0 1 120 0
+          " />
+    <text x="360" y="210" font-family="Arial" fill="black" font-size="120" text-anchor="middle" alignment-baseline="auto">
+        Bridges
+    </text>
+
+</svg>

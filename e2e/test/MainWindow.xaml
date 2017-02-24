@@ -1,0 +1,49 @@
+﻿<RibbonWindow x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1050">
+    <Grid>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Ribbon>
+            <RibbonTab Header="Reports">
+                <RibbonGroup Header="Libraries">
+                    <RibbonButton Label="View Report" Click="ViewReport"/>
+                    <RibbonButton Label="Edit Report" Click="EditReport"/>
+                </RibbonGroup>
+            </RibbonTab>
+        </Ribbon>
+        <DataGrid Grid.Row="1" Background="Black" VirtualizingPanel.IsVirtualizing="True" AutoGenerateColumns="False" FontFamily="Arial" FontSize="14" IsReadOnly="True" Name="gdLog">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Action">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Foreground="{Binding ActionBrush}"><Run Text="{Binding Action}"/></TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Comment" Foreground="Cyan" Binding="{Binding Comment}"/>
+                <DataGridTextColumn Header="Result" Foreground="Green" Binding="{Binding Result}"/>
+                <DataGridTextColumn Header="Success" Foreground="Red" Binding="{Binding Failed}"/>
+            </DataGrid.Columns>
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="Black"></Setter>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="Background" Value="Black"></Setter>
+                </Style>
+            </DataGrid.CellStyle>
+        </DataGrid>
+    </Grid>
+</RibbonWindow>

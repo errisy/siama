@@ -1,0 +1,102 @@
+﻿@mixin clickable {
+    &:hover{
+        color: #08f;
+    }
+    &:active{
+        color: #00b;
+    }
+}
+
+:host{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    >svg.readonly{
+        >path{
+            stroke: #ccc;
+        }
+    }
+    >div.dropdown{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        >div.field{
+            display: flex;
+            flex: 0 0 auto;
+            >div[ui-btn-left],div[ui-btn-right]{
+                flex: 0 0 20px;
+                height: 20px;
+                width: 20px;
+                cursor: pointer;
+                >svg{
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+            >div.value{
+                flex: 1 1 auto;
+                text-align: center;
+                user-select: none;
+                cursor: pointer;
+                @include clickable();
+            }
+        }
+        >div.year-selector{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            >div{
+                flex: 0 0 33%;
+                text-align: center;
+                padding: 4px 0 4px 0;
+                @include clickable();
+            }
+        }
+        >div.month-selector{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            >div{
+                flex: 0 0 25%;
+                text-align: center;
+                padding: 4px 0 4px 0;
+                @include clickable();
+            }
+        }
+        >div.date-selector{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            >div{
+                flex: 0 0 14%;
+                text-align: center;
+                padding: 4px 0 4px 0;
+                @include clickable();
+            }
+        }
+        >div.panel{
+            display: flex;
+            flex-direction: row;
+            >div[ui-btn-accept],div[ui-btn-cancel]{
+                flex: 0 0 20px;
+                height: 20px;
+                width: 20px;
+            }
+            >div.today{
+                flex: 1 1 auto;
+                text-align: center;
+                user-select: none;
+                @include clickable();
+            }
+        }
+    }
+}

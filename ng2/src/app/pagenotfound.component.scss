@@ -1,0 +1,22 @@
+﻿:host{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >div.subject{
+        font-size: 32px;
+        font-weight: bold;
+        padding: 15px 0 15px 0;
+        color: #555;
+    }
+    >div.logo{
+        flex: 0 0 50vh;
+        width: 50vh;
+        background-repeat: no-repeat;
+        background-image: url('http://rawgit.com/errisy/siama-static/master/svg/logo.svg');
+        background-position: center center;
+        background-size: contain;
+    }
+    >div.title{
+        font-size: 28px;
+    }
+}

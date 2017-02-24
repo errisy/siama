@@ -1,0 +1,25 @@
+{
+  "name": "siama-server",
+  "version": "1.0.0",
+  "description": "siama server full stack test",
+  "main": "start.sys.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "errisy-server",
+    "full",
+    "stack",
+    "instance"
+  ],
+  "author": "Zhenyu Shi",
+  "license": "ISC",
+  "dependencies": {
+    "errisy-server": "1.0.3",
+    "errisy-task": "1.0.1",
+    "errisy-fs": "1.0.0",
+    "errisy-rpc": "1.0.1",
+    "formidable": "1.1.1",
+    "uuid": "3.0.1"
+  }
+}

@@ -1,0 +1,1 @@
+﻿:host{cursor:pointer;}:host>svg.expanded>path#expanded{stroke-opacity:1;}:host>svg.expanded>path#shrinked{stroke-opacity:0;}:host>svg.shrinked>path#expanded{stroke-opacity:0;}:host>svg.shrinked>path#shrinked{stroke-opacity:1;}:host>svg:hover>path{stroke:#08f;}:host>svg:active>path{stroke:#00b;}

@@ -1,0 +1,13 @@
+﻿:host {
+  cursor: pointer; }
+  :host > svg.checked > rect {
+    fill: green; }
+  :host > svg.checked > circle#unchecked {
+    fill-opacity: 0;
+    stroke-opacity: 0; }
+  :host > svg.checked > circle#checked {
+    fill-opacity: 1;
+    stroke-opacity: 1; }
+  :host > svg.readonly > rect {
+    fill: #ccc; }
+

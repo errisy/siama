@@ -1,0 +1,1 @@
+node tsc.js -p siama-server -w

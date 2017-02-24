@@ -1,0 +1,23 @@
+﻿:host{
+    cursor: pointer;
+    >svg{
+        &.checked{
+            >rect{
+                fill: green;
+            }
+            >circle#unchecked{
+                fill-opacity: 0;
+                stroke-opacity: 0;
+            }
+            >circle#checked{
+                fill-opacity: 1;
+                stroke-opacity: 1;
+            }
+        }
+        &.readonly{
+            >rect{
+                fill: #ccc;
+            }
+        }
+    }
+}

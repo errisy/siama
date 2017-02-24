@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC3DB78B-D4B3-4AF1-A793-0CBE12904819}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>ng2ts.Module1</StartupObject>
+    <RootNamespace>ng2ts</RootNamespace>
+    <AssemblyName>ng2ts</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ng2ts.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ng2ts.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\pagenotfound.component.css">
+      <DependentUpon>pagenotfound.component.scss</DependentUpon>
+    </Content>
+    <Content Include="app\pagenotfound.component.html" />
+    <Content Include="app\pagenotfound.component.min.css">
+      <DependentUpon>pagenotfound.component.css</DependentUpon>
+    </Content>
+    <Content Include="app\report.component.css">
+      <DependentUpon>report.component.scss</DependentUpon>
+    </Content>
+    <Content Include="app\report.component.html" />
+    <Content Include="app\report.component.min.css">
+      <DependentUpon>report.component.css</DependentUpon>
+    </Content>
+    <Content Include="svg\date.svg" />
+    <Content Include="svg\edit.svg" />
+    <Content Include="ui\accept.btn.component.html" />
+    <Content Include="ui\cancel.btn.component.html" />
+    <Content Include="ui\datepicker.component.css">
+      <DependentUpon>datepicker.component.scss</DependentUpon>
+    </Content>
+    <Content Include="ui\datepicker.component.min.css">
+      <DependentUpon>datepicker.component.css</DependentUpon>
+    </Content>
+    <Content Include="ui\datepicker.css">
+      <DependentUpon>datepicker.component.scss</DependentUpon>
+    </Content>
+    <Content Include="ui\datepicker.component.html" />
+    <Content Include="ui\datepicker.min.css">
+      <DependentUpon>datepicker.css</DependentUpon>
+    </Content>
+    <Content Include="ui\expand.btn.component.min.css">
+      <DependentUpon>expand.btn.component.css</DependentUpon>
+    </Content>
+    <Content Include="ui\left.btn.component.html" />
+    <Content Include="ui\line.btn.component.css">
+      <DependentUpon>line.btn.component.scss</DependentUpon>
+    </Content>
+    <Content Include="ui\line.btn.component.min.css">
+      <DependentUpon>line.btn.component.css</DependentUpon>
+    </Content>
+    <Content Include="ui\right.btn.component.html" />
+    <Content Include="ui\slide.checkbox.component.css">
+      <DependentUpon>slide.checkbox.component.scss</DependentUpon>
+    </Content>
+    <Content Include="ui\slide.checkbox.component.html" />
+    <Content Include="ui\slide.checkbox.component.min.css">
+      <DependentUpon>slide.checkbox.component.css</DependentUpon>
+    </Content>
+    <Content Include="ui\tick.checkbox.component.css">
+      <DependentUpon>tick.checkbox.component.scss</DependentUpon>
+    </Content>
+    <Content Include="ui\tick.checkbox.component.html" />
+    <Content Include="ui\tick.checkbox.component.min.css">
+      <DependentUpon>tick.checkbox.component.css</DependentUpon>
+    </Content>
+    <None Include="ui\line.btn.component.scss" />
+    <None Include="ui\slide.checkbox.component.scss" />
+    <None Include="ui\tick.checkbox.component.scss" />
+    <TypeScriptCompile Include="app\app.client.ts" />
+    <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\app.routing.ts" />
+    <TypeScriptCompile Include="app\app.rpc.ts" />
+    <TypeScriptCompile Include="app\report.type.ts" />
+    <TypeScriptCompile Include="app\report.component.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\systemjs\systemjs.d.ts" />
+    <TypeScriptCompile Include="ui\cancel.btn.component.ts" />
+    <TypeScriptCompile Include="ui\datepicker.component.ts" />
+    <TypeScriptCompile Include="ui\editor.ts" />
+    <TypeScriptCompile Include="ui\expand.btn.component.ts" />
+    <TypeScriptCompile Include="app\pagenotfound.component.ts" />
+    <TypeScriptCompile Include="koala-config.ts" />
+    <TypeScriptCompile Include="koala-min.ts" />
+    <Content Include="app.css">
+      <DependentUpon>app.scss</DependentUpon>
+    </Content>
+    <Content Include="app.min.css">
+      <DependentUpon>app.css</DependentUpon>
+    </Content>
+    <Content Include="app\app.component.css">
+      <DependentUpon>app.component.scss</DependentUpon>
+    </Content>
+    <Content Include="app\app.component.min.css">
+      <DependentUpon>app.component.css</DependentUpon>
+    </Content>
+    <Content Include="ui\expand.btn.component.css">
+      <DependentUpon>expand.btn.component.scss</DependentUpon>
+    </Content>
+    <Content Include="ui\expand.btn.component.html" />
+    <None Include="app\app.component.scss" />
+    <None Include="app\pagenotfound.component.scss" />
+    <None Include="app\report.component.scss" />
+    <None Include="package.json" />
+    <None Include="ui\datepicker.component.scss" />
+    <None Include="ui\expand.btn.component.scss" />
+    <None Include="manifest.json" />
+    <None Include="app.scss" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <TypeScriptTarget>ES6</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptExperimentalDecorators>true</TypeScriptExperimentalDecorators>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <ItemGroup>
+    <TypeScriptCompile Include="app\app.component.ts" />
+    <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\packer\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-dataflow\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-packer\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-address\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-bindable\index.ts" />
+    <TypeScriptCompile Include="node_modules\@types\node\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\@types\googlemaps\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-cgi\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-color\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-copy\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-datetime\datetime-picker.component.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-datetime\datetime-picker.directive.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-datetime\datetime.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-datetime\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-dynamic\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-fs\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-map\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-map\markers.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-mongo\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-ng2\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-nodeutil\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-parser\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-path\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-paypal\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-rpc\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-rsa\jsencrypt.d.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-rsa\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-rsa\task.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-server\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-server\mime.sys.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-session\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-string\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-task\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-test\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-ui\buttons.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-ui\cssstyles.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-ui\floorplan.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-ui\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-ui\modelbase.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-ui\openinghours.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-ui\options.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-ui\pipes.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-ui\tabmanager.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-ui\tabview.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-util\index.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-util\keypair.d.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-util\md5.ts" />
+    <TypeScriptCompile Include="node_modules\errisy-util\randomstring.ts" />
+    <TypeScriptCompile Include="node_modules\jsencrypt\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\jsencrypt\keygen.ts" />
+    <TypeScriptCompile Include="node_modules\jsencrypt\task.ts" />
+    <TypeScriptCompile Include="node_modules\Serializable\index.ts" />
+    <Content Include="node_modules\errisy-copy\index.js" />
+    <Content Include="svg\logo.svg" />
+    <TypeScriptCompile Include="start.sys.ts" />
+    <TypeScriptCompile Include="ui\left.btn.component.ts" />
+    <TypeScriptCompile Include="ui\accept.btn.component.ts" />
+    <TypeScriptCompile Include="ui\right.btn.component.ts" />
+    <TypeScriptCompile Include="ui\slide.checkbox.component.ts" />
+    <TypeScriptCompile Include="ui\tick.checkbox.component.ts" />
+    <TypeScriptCompile Include="watch.sys.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\app.component.html" />
+    <Content Include="index.html" />
+    <Content Include="node_modules\jsencrypt\index.js" />
+    <Content Include="systemjs.config.js" />
+  </ItemGroup>
+  <ItemGroup />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

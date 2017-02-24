@@ -1,0 +1,198 @@
+﻿@mixin btnhover{
+    &:hover{
+        background-color: #fc8;
+    }
+    &:active{
+        background-color: #fa3;
+    }
+}
+
+:host{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    >div.head{
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+        border-bottom: 1px solid #888;
+        @media screen and (max-width: 800px){
+            flex-direction: column;
+        }
+        @media screen and (min-width: 800px){
+            flex-direction: row;
+        }
+        >div.logo{
+            @media screen and (max-width: 960px){
+                display: none;
+            }
+            @media screen and (min-width: 960px){
+                flex: 0 0 240px;
+                height: 100px;
+                margin: 0 0 0 20px;
+                align-self: stretch;
+                background-image: url("http://rawgit.com/errisy/siama-static/master/svg/logo.svg");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        >div.title{
+            flex: 1 1 auto;
+            font-weight: bold;
+            font-family: roboto;
+
+            text-align: center;
+            @media screen and (max-width: 400px){
+                font-size: 18px;
+            }
+            @media screen and (min-width: 400px) and (max-width: 600px){
+                font-size: 24px;
+            }
+            @media screen and (min-width: 600px){
+                font-size: 32px;
+            }
+        }
+        >div.search{
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            @media screen and (max-width: 400px){
+                align-self: stretch;
+            }
+            @media screen and (min-width: 960px){
+                margin-right: 10px;
+            }
+            >div.input{
+                box-sizing: border-box;
+                @media screen and (max-width: 400px){
+                    flex: 1 1 auto;
+                }
+                @media screen and (min-width: 400px){
+                    flex: 0 0 120px;
+                    width: 120px;
+                    max-width: 120px;
+                }
+                font-family: roboto;
+                font-size: 24px;
+                border: 1px solid #666;
+                height: 32px;
+                border-radius: 4px;
+                position: relative;
+                >span[contenteditable]{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    display: block;
+                    height: 32px;
+                }
+                >span.placeholder{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    width: 100%;
+                    height: 32px;
+                    color: #aaa;
+                    user-select: none;
+                }
+            }
+            >div.img{
+                flex: 0 0 32px;
+                width: 32px;
+                height: 32px;
+                border: 1px solid #666;
+                border-radius: 4px;
+                background-image: url("http://rawgit.com/errisy/siama-static/master/svg/search.svg");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                cursor: pointer;
+                &:hover{
+                    border: 1px solid #fa8;
+                }
+                &:active{
+                    border: 1px solid #f62;
+                }
+            }
+        }
+    }
+
+
+    >div.main{
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        >div.nav{
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #888;
+            >div.swtich{
+                display: flex;
+                flex-direction: row;
+                flex: 0 0 28px;
+                >div.placeholder{
+                    flex: 1 1 auto;
+                }
+                >div[ui-btn-expand]{
+                    flex: 0 0 28px;
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+            >div.menu{
+                flex: 1 1 auto;
+                width: 280px;
+                display: flex;
+                flex-direction: column;
+                border-left: 2px solid black;
+                border-right: 2px solid black;
+                border-bottom: 2px solid black;
+                margin: 5px 10px 20px 10px;
+                >div{
+                    border-top: 2px solid black;
+                }
+                >div.tab{
+                    flex: 0 0 auto;
+                    font-size: 16px;
+                    padding: 8px;
+                    cursor: pointer;
+                    user-select: none;
+                    @include btnhover();
+                    &.selected{
+                        background-color: #95bcf2;
+                        @include btnhover();
+                    }
+                }
+                >div.view{
+                    flex: 1 1 auto;
+                    display: flex;
+                    flex-direction: column;
+                    overflow-y: auto;
+                    cursor: pointer;
+                    >div.item{
+                        flex: 0 0 auto;
+                        padding: 8px 8px 8px 24px;
+                        @include btnhover();
+                    }
+                }
+            }
+
+        }
+        >div.view{
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            flex: 1 1 auto;
+            >router-outlet{
+                display: none;
+            }
+        }
+    }
+
+}

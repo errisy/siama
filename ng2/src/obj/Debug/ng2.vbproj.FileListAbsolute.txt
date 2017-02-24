@@ -1,0 +1,11 @@
+C:\HTTP\erstack\ng2\src\bin\Debug\ng2ts.exe.config
+C:\HTTP\erstack\ng2\src\obj\Debug\ng2ts.exe
+C:\HTTP\erstack\ng2\src\obj\Debug\ng2ts.xml
+C:\HTTP\erstack\ng2\src\obj\Debug\ng2ts.pdb
+C:\HTTP\siama\ng2\src\bin\Debug\ng2ts.exe.config
+C:\HTTP\siama\ng2\src\obj\Debug\ng2ts.exe
+C:\HTTP\siama\ng2\src\obj\Debug\ng2ts.xml
+C:\HTTP\siama\ng2\src\obj\Debug\ng2ts.pdb
+C:\HTTP\siama\ng2\src\obj\Debug\ng2.vbprojResolveAssemblyReference.cache
+C:\HTTP\siama\ng2\src\obj\Debug\ng2ts.Resources.resources
+C:\HTTP\siama\ng2\src\obj\Debug\ng2.vbproj.GenerateResource.Cache

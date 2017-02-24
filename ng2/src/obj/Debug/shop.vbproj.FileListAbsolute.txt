@@ -1,0 +1,7 @@
+C:\HTTP\shop\shop\bin\Debug\ng2ts.exe.config
+C:\HTTP\shop\shop\obj\Debug\ng2ts.exe
+C:\HTTP\shop\shop\obj\Debug\ng2ts.xml
+C:\HTTP\shop\shop\obj\Debug\ng2ts.pdb
+C:\HTTP\shop\shop\obj\Debug\shop.vbprojResolveAssemblyReference.cache
+C:\HTTP\shop\shop\obj\Debug\ng2ts.Resources.resources
+C:\HTTP\shop\shop\obj\Debug\shop.vbproj.GenerateResource.Cache
