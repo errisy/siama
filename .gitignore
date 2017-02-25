@@ -8,6 +8,11 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
+# Node modules
+
+siama-server/node_modules
+ng2/src/node_modules
+
 # Windows Installer files
 *.cab
 *.msi

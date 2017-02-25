@@ -4,14 +4,6 @@ import {
 } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { CompleterModule, CompleterService, CompleterCmp } from 'errisy-completer';
- 
- 
-
-import * as clipboardjs from 'errisy-copy';
-
-import { obs } from 'errisy-bindable';
-
 import * as util from 'errisy-util';
 
 @Component({
