@@ -48,3 +48,5 @@ No unit test was provided for REST APIs calls only, as the errisy-server RPC has
 This is a WPF application using selenium webdriver. You can only run it in Windows (with .Net 4.6).
 Click **View Report** and **Edit Report** to start each of the tests.
 
+## Browser Compatibility
+The front end UI has tested checked in major evergreen browsers, Edge, FireFox, Chrome.
